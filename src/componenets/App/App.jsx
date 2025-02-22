@@ -9,7 +9,6 @@ import TransactionHistory from '../TransactionHistory/TransactionHistory';
 import Task1 from '../Task/Task1';
 import Task2 from '../Task/Task2';
 import Task3 from '../Task/Task3';
-
 const App = () => {
   return (
     <>
