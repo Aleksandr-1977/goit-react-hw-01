@@ -7,26 +7,26 @@ const Profile = ({
   stats: { followers, views, likes },
 }) => {
   return (
-    <div className={css.profile}>
-      <div>
+    <div className={css.container}>
+      <div className={css.profile}>
         <img src={image} alt="User avatar" className={css.img} />
-        <p>{name}</p>
-        <p>{tag}</p>
-        <p>{location}</p>
+        <p className={css.title}>{name}</p>
+        <p className={css.text}>@{tag}</p>
+        <p className={css.text}>{location}</p>
       </div>
 
-      <ul>
-        <li>
+      <ul className={css.list}>
+        <li className={css.listitem}>
           <span>Followers</span>
-          <span>{followers}</span>
+          <span className={css.likes}>{followers}</span>
         </li>
-        <li>
+        <li className={css.listitem}>
           <span>Views</span>
-          <span>{views}</span>
+          <span className={css.likes}>{views}</span>
         </li>
-        <li>
+        <li className={css.listitem}>
           <span>Likes</span>
-          <span>{likes}</span>
+          <span className={css.likes}>{likes}</span>
         </li>
       </ul>
     </div>
